@@ -1,0 +1,72 @@
+:root {
+	--background: #25474d;
+}
+
+html,
+body {
+	min-height: 100%;
+	/* merged */
+	min-height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-size: 1rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1rem;
+	/* merged */
+	color: black;
+}
+
+form {
+	width: 70%;
+	/* merged */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+input {
+	border: none;
+}
+
+.btn {
+	padding: 10px 20px;
+}
+
+@viewport {
+	width: device-width;
+	zoom: 1.0;
+}
+
+@keyframes move  {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 100%;
+	}
+
+}
+
+@media screen and (min-width: 768px)  {
+	h3 {
+		font-size: 1rem;
+	}
+
+}
