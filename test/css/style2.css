@@ -1,97 +1,126 @@
-:root {
-	--background: #25474d;
-
-}
-
 @viewport {
-	width: device-width;
-	zoom: 1.0;
+    width: device-width;
+    zoom: 1;
 }
 
 body {
-	text-align: center;
+    text-align: center;
 }
 
-body {}
+body {
+}
 
 body,
 html {
-	box-sizing: border-box;
-	margin: 0;
-	min-height: 100%;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
 }
-
+:root {
+    --background: #25474d;
+}
+p{}
 form input,
 form select {
-	height: 50px;
-	margin: 2px;
-	width: 45%;
+    height: 50px;
+    margin: 2px;
+    width: 45%;
+}
+@keyframes move {
+}
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 10;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    #menuBar {
+        width: 50px;
+    }
+    input {
+        padding: 5px;
+    }
+    main {
+        width: calc(100% - 50px);
+    }
 }
 
 form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 auto;
-	width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
 }
 
-form input[type='submit'] {
-	margin: 2px;
-	width: 100%;
+form 
+
+input[type='submit'] {
+    margin: 2px;
+    width: 100%;
 }
 
 form label {
-	height: 50px;
-	width: 45%;
+    height: 50px;
+    width: 45%;
 }
 
 h1 {
-	font-size: 1.5rem;
-	margin: 0;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 h2 {
-	font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 h2 {
-	font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 h3 {
-	font-size: 1.375rem;
-	z-index: 1;
+    font-size: 1.375rem;
+    z-index: 1;
 }
 
 h3 {
-	color: red;
+    color: red;
 }
 
 html {
-	height: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 input:hover,
 input[type='submit']:hover {
-	background-color: rgba(255, 255, 255, 0.64);
-	box-shadow: grey 0 0 15px;
-	color: #222222;
+    background-color: rgba(255, 255, 255, 0.64);
+    box-shadow: grey 0 0 15px;
+    color: #222222;
 }
 
 input.navBtn {
-	background-color: rgba(47, 143, 23, 0.9);
-	box-shadow: rgba(47, 143, 23, 0.6) 0 0 10px;
-	text-shadow: #222222 0 0 5px;
+    background-color: rgba(47, 143, 23, 0.9);
+    box-shadow: rgba(47, 143, 23, 0.6) 0 0 10px;
+    text-shadow: #222222 0 0 5px;
 }
 
 input.navBtn:hover {
-	background-color: rgba(47, 143, 23, 0.5);
-	box-shadow: rgba(47, 143, 23, 0.9) 0 0 10px;
-	text-shadow: #222222 0 0 5px;
+    background-color: rgba(47, 143, 23, 0.5);
+    box-shadow: rgba(47, 143, 23, 0.9) 0 0 10px;
+    text-shadow: #222222 0 0 5px;
 }
 
 input {
-	padding: 0;
+    padding: 0;
 }

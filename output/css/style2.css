@@ -8,15 +8,18 @@ body {
 	margin: 0;
 	min-height: 100%;
 	padding: 0;
+	/* merged */
+	height: 100%;
 }
 
 html {
 	height: 100%;
+	font-size: 16px;
 }
 
 body {
-	/* merged */
 	text-align: center;
+	/* merged */
 }
 
 h1 {
@@ -35,6 +38,9 @@ h3 {
 	z-index: 1;
 	/* merged */
 	color: red;
+}
+
+p {
 }
 
 form {
@@ -87,5 +93,32 @@ input.navBtn:hover {
 
 @viewport {
 	width: device-width;
-	zoom: 1.0;
+	zoom: 1;
+}
+
+@keyframes move {
+}
+
+@keyframes move {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 10;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	main {
+		width: calc(100% - 50px);
+	}
+
+	input {
+		padding: 5px;
+	}
+
+	#menuBar {
+		width: 50px;
+	}
 }

@@ -1,72 +1,42 @@
-:root {
-	--background: #25474d;
+header,
+header.active {
 }
 
-html,
-body {
-	min-height: 100%;
-	/* merged */
-	min-height: 100%;
+header {
 }
 
-html {
-	height: 100%;
+header.active {
 }
 
-body {
-	font-size: 1rem;
+header.b {
 }
 
-h1 {
-	font-size: 1.5rem;
+header[open] {
 }
 
-h2 {
-	font-size: 1.25rem;
+header:hover {
 }
 
-p {
-	font-size: 1rem;
-	/* merged */
-	color: black;
+header p {
 }
 
-form {
-	width: 70%;
-	/* merged */
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 auto;
+header.active p {
 }
 
-input {
-	border: none;
+header[open] p {
 }
 
-.btn {
-	padding: 10px 20px;
+header:hover p {
 }
 
-@viewport {
-	width: device-width;
-	zoom: 1.0;
+header div {
 }
 
-@keyframes move  {
-	0% {
-		left: 0;
-	}
-
-	100% {
-		left: 100%;
-	}
-
+header div:hover {
 }
 
-@media screen and (min-width: 768px)  {
-	h3 {
-		font-size: 1rem;
-	}
+header div p.txt {
+}
 
+header div p.txt:hover {
 }

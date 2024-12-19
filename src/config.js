@@ -1,23 +1,27 @@
 module.exports = {
-    inputPath: 'test/',                     // Path to the input directory containing CSS files
-    target: 'css',                          // Target directory or file to sort
-    outputPath: 'output/',                  // Path to the output directory for sorted CSS files
+    inputPath: 'test',
+    outputPath: 'output',
+    clearOutputDir: true,
 
-    changeFontPxToRem: true,                // Whether to convert font sizes from px to rem
+    changeFontPxToRem: true,
+    addPxFontSizeToHtmlTag: 16,
 
-    logFileNames: true,                     // Log file names during processing
-    logDirNames: true,                      // Log directory names during processing
-    logMergedSelectors: true,               // Log merged selectors
+    logAddPxFontSizeToHtmlTag: true,
+    logFileNames: true,
+    logDirNames: true,
+    logMergedSelectors: true,
 
-    mergeDuplicateSelectors: true,          // Whether to merge duplicate selectors
+    mergeDuplicateSelectors: true,
+    addMergedComments: true,
 
-    tagsOrder: [                            // Order of CSS selectors
+    // prettier-ignore
+    tagsOrder: [                            
         // CSS Variables
         'root',
         // Universal Selector
         '*',
         // Document Structure
-        'html', 'body', 'header', 'nav', 'main', 'section', 'article', 'aside', 'footer',
+        'html', 'body', '#root', 'header', 'nav', 'main', 'section', 'article', 'aside', 'footer',
         // Headings
         'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
         // Text Elements
@@ -34,7 +38,5 @@ module.exports = {
         'otherTags', 'class', 'id', '@'
     ],
 
-    processAtsAndOrder: [                   // At-rules to process and their order
-        'supports', 'keyframes', 'media'
-    ]
+    processAtsAndOrder: ['supports', 'keyframes', 'media'],
 };
